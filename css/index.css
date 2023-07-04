@@ -149,10 +149,13 @@
 
     /* 섹션 */
     .sectioin {
+        z-index: 100;
+    }
+
+    .company_info {
         width: 100vw;
         min-height: 100px;
         background-color: #fa2828;
-        z-index: 100;
     }
 }
 
