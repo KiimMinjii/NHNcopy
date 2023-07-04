@@ -6,18 +6,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- css -->
         <link rel="stylesheet" href="../css/index.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
 
         <!-- 파비콘 -->
         <!-- <link rel="shortcut icon" href="/image/favicon.ico" /> -->
 
         <!-- js -->
         <script src="/js/jquery-3.7.0.js"></script>
+        <script src="/js/index.js"></script>
 
         <!-- title -->
         <title>NHN</title>
     </head>
     <body>
-        <div class="wrap">
+        <div id="wrap">
             <div class="main">
                 <!-- 헤더 -->
                 <div class="header">
@@ -27,29 +34,55 @@
                     </h1>
 
                     <!-- 네비게이션 -->
-                    <nav>
-                        <ul>
-                            <li><a class="" href="#">Announce</a></li>
-                            <li><a class="nav-link" href="#">Announce</a></li>
-                            <li><a class="nav-link" href="#">Announce</a></li>
-                            <li><a class="nav-link" href="#">Announce</a></li>
-                            <li><a class="nav-link" href="#">Announce</a></li>
+                    <nav class="global_nav">
+                        <ul class="nav">
+                            <li><a class="nav_link" href="#">NHN</a></li>
+                            <li><a class="nav_link" href="#">SERVICE</a></li>
+                            <li><a class="nav_link" href="#">PR</a></li>
+                            <li><a class="nav_link" href="#">IR</a></li>
+                            <li><a class="nav_link" href="#">RECRUIT</a></li>
+                            <li><a class="nav_link" href="#">ESG</a></li>
+                            <li><a class="nav_link" href="#">INSIDE NHN</a></li>
+                        </ul>
+                        <ul class="language">
+                            <li><a href="#" class="nav_link bar">|</a></li>
+                        </ul>
+                        <ul class="language">
+                            <li><a href="#" class="nav_link kr">KR</a></li>
+                            <li class="en"><a href="#" class="nav_link">EN</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
 
             <!-- 본문 -->
-            <div id="container">
+
+            <!-- 슬라이드 -->
+            <div class="containe slide_list">
                 <!-- 소개 -->
-                <ul class="slide_list">
-                    <li class="slide1">
-                        <div class="text_box">
-                            <h3 class="title">Play Hard, Work Smart!</h3>
-                            <p class="text">놀이가 작품이 되고 상상이 현실이 되는 곳</p>
-                        </div>
-                    </li>
-                </ul>
+                <!-- t슬라이드1  -->
+                <div class="slide1 slideImg">
+                    <div class="text_box">
+                        <h3 class="title">Play Hard, Work Smart!</h3>
+                        <p class="text">놀이가 작품이 되고 상상이 현실이 되는 곳</p>
+                    </div>
+                </div>
+
+                <!-- 슬라이드2 -->
+                <div class="slide2 slideImg">
+                    <div class="text_box">
+                        <h3 class="title">Let the World Play with Us!</h3>
+                        <p class="text">더 넓은 세상, 더 많은 사람들이 더 큰 재미를 우리와 함께 나눕니다</p>
+                    </div>
+                </div>
+
+                <!-- 슬라이드3 -->
+                <div class="slide3 slideImg">
+                    <div class="text_box">
+                        <h3 class="title">Toward Art, Science & Tech</h3>
+                        <p class="text">새로운 세상을 만들기 위해 도전합니다</p>
+                    </div>
+                </div>
 
                 <!-- 섹션 분류 -->
                 <div class="sectioin">
@@ -63,6 +96,7 @@
                     </ul>
                 </div>
 
+                <!-- 타임그래프 -->
                 <div class="time_graph">
                     <div class="control_box"></div>
                     <div class="graph"></div>
