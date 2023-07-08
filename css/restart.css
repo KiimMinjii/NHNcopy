@@ -1,7 +1,8 @@
 /* 초기화 */
 @charset "utf=8";
 /* 폰트 */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://webfontworld.github.io/naver/NanumBarunGothic.css');
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
@@ -10,7 +11,7 @@
     list-style: none;
     text-decoration: none;
     word-break: keep-all;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'NanumBarunGothic', sans-serif;
 }
 
 /* 전체 */
@@ -64,7 +65,7 @@ h1 > a > img {
 .nav_link {
     font-size: 14px;
     font-weight: 600;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
     color: white;
     margin-left: 3.125rem;
 }
@@ -126,11 +127,65 @@ h1 > a > img {
 .notice {
     width: 100vw;
     padding: 1rem 0rem;
-    background-color: beige;
+    background-color: #fff;
 }
+
+.notice_box {
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+.notice_text > strong {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+.notice_text > a {
+    padding-left: 2rem;
+    font-size: 14px;
+    color: #494949;
+}
+
+/* ----------------------------------- */
 
 /* 푸터-서술 */
 .foot_ann {
     width: 100vw;
-    padding: 2rem 0rem;
+    padding: 2.5rem 0rem;
+    background-color: #fff;
+    border-top: solid 1px #d8d8d8;
+}
+
+.foot_ann_box {
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+.legal_list {
+    clear: both;
+}
+
+.legal_text {
+    float: left;
+    color: #999;
+    margin-right: 2rem;
+    font-size: 14px;
+    margin-bottom: 2rem;
+}
+
+.legal_text > strong {
+    color: #494949;
+}
+
+.legal_text:hover {
+    text-decoration: underline;
+}
+
+.copy {
+    clear: both;
+    font-family: 'Montserrat', sans-serif;
+    color: #999;
+    font-size: 14px;
 }
