@@ -47,7 +47,7 @@
 h1 > a > img {
     width: 7.5rem;
     float: left;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
 }
 
 /* ----------------------------------- */
@@ -55,7 +55,7 @@ h1 > a > img {
 /* 헤더-네비게이션 */
 .global_nav {
     float: right;
-    margin-top: 1.5rem;
+    margin-top: 2.2rem;
 }
 
 .global_nav > li {
@@ -95,13 +95,83 @@ h1 > a > img {
     position: relative;
 }
 
+.main_con {
+    width: 100vw;
+    height: 100vh;
+    background-color: blanchedalmond;
+    position: relative;
+}
+.slide_list > li {
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: 50% 50%;
+}
+
+.slide1 {
+    background-image: url('/source/main_01.jpg');
+    background-size: cover;
+}
+
+/* 텍스트 */
+.text_box {
+    max-width: 90rem;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+.text_box_inner {
+    position: absolute;
+    top: 50%;
+    margin-top: -7rem;
+}
+
+h3 {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.02;
+    margin-bottom: 1.875rem;
+}
+
+h4 {
+    font-size: 22px;
+    color: white;
+    line-height: 1.36;
+}
+
+/* ----------------------------------- */
+
+/* 서브컨텐츠 */
+.time {
+    max-width: 90rem;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 200px;
+    right: 12%;
+    z-index: 10;
+}
+
+.company {
+    max-width: 90rem;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 200px;
+    left: 12%;
+    z-index: 10;
+}
+
 /* ----------------------------------- */
 
 /* 주식/PRESS */
 .cloum_box {
     width: 100vw;
     height: 10rem;
-    background-color: blueviolet;
     clear: both;
     position: absolute;
     bottom: 0;
