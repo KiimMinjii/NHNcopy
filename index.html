@@ -2,113 +2,122 @@
 <html lang="ko">
     <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
         <!-- css -->
-        <link rel="stylesheet" href="../css/index.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
-            rel="stylesheet"
-        />
+        <link rel="stylesheet" href="/css/index.css" />
 
-        <!-- js -->
-        <script src="../js/jquery-3.7.0.js"></script>
-        <script src="../js/index.js"></script>
-
-        <!-- title -->
         <title>NHN</title>
     </head>
+
+    <!-- 본문 -->
     <body>
-        <div id="wrap">
-            <div class="main">
-                <!-- 헤더 -->
-                <div class="header">
-                    <!-- 로고 -->
-                    <h1>
-                        <a href="#" class="logo"> <img src="../source/logo_white.png" alt="logo" /></a>
-                    </h1>
+        <div id="wrapper">
+            <!-- 헤더 -->
+            <header id="header">
+                <div class="head_box">
+                    <div class="head_con">
+                        <!-- 로고 -->
+                        <h1 class="logo">
+                            <a href="#"><img src="/source/logo_white.png" alt="로고" /></a>
+                        </h1>
 
-                    <!-- 네비게이션 -->
-                    <nav class="global_nav">
-                        <ul class="nav">
-                            <li><a class="nav_link" href="#">NHN</a></li>
-                            <li><a class="nav_link" href="#">SERVICE</a></li>
-                            <li><a class="nav_link" href="#">PR</a></li>
-                            <li><a class="nav_link" href="#">IR</a></li>
-                            <li><a class="nav_link" href="#">RECRUIT</a></li>
-                            <li><a class="nav_link" href="#">ESG</a></li>
-                            <li><a class="nav_link" href="#">INSIDE NHN</a></li>
-                        </ul>
-                        <ul class="language">
-                            <li><a href="#" class="nav_link bar">|</a></li>
-                        </ul>
-                        <ul class="language">
-                            <li><a href="#" class="nav_link kr">KR</a></li>
-                            <li class="en"><a href="#" class="nav_link">EN</a></li>
-                        </ul>
-                    </nav>
+                        <!-- 네비게이션 -->
+                        <nav>
+                            <ul class="global_nav">
+                                <li><a class="nav_link" href="#">NHN</a></li>
+                                <li><a class="nav_link" href="#">SERVICE</a></li>
+                                <li><a class="nav_link" href="#">PR</a></li>
+                                <li><a class="nav_link" href="#">IR</a></li>
+                                <li><a class="nav_link" href="#">RECRUIT</a></li>
+                                <li><a class="nav_link" href="#">ESG</a></li>
+                                <li><a class="nav_link" href="#">INSIDE NHN</a></li>
+                                <li><a href="#" class="nav_link bar">|</a></li>
+                                <li><a href="#" class="nav_link kr">KR</a></li>
+                                <li><a href="#" class="nav_link en">EN</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
+            </header>
+
+            <!-- 메인컨텐츠 -->
+            <div id="contain">
+                <div class="main_con">
+                    <!-- 슬라이드 목록 -->
+                    <ul class="slide_list">
+                        <!-- 슬라이드 1 -->
+                        <li class="slide1">
+                            <div class="text_box">
+                                <div class="text_box_inner">
+                                    <h3>Play Hard, Work Smart!</h3>
+                                    <h4>놀이가 작품이 되고 상상이 현실이 되는 곳</h4>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- 슬라이드2 -->
+                        <!-- 슬라이드3 -->
+                    </ul>
+                    <!-- 슬라이드 종료 -->
+
+                    <!-- 타임그래퍼 -->
+                    <div class="time">
+                        <p>시간이가요</p>
+                    </div>
+
+                    <!-- 자회사 -->
+                    <div class="company">
+                        <p>자회사 이미지들</p>
+                    </div>
+
+                    <!-- 주식/PRESS -->
+                    <div class="cloum_box">
+                        <div class="stock">스톡</div>
+                        <div class="press">프레스</div>
+                    </div>
+                </div>
+                <!-- 메인컨텐츠 종료 -->
             </div>
 
-            <!-- 본문 -->
-
-            <!-- 슬라이드 -->
-            <div class="containe slide_list">
-                <!-- 소개 -->
-                <!-- t슬라이드1  -->
-                <div class="slide1 slideImg">
-                    <div class="text_box">
-                        <h3 class="title">Play Hard, Work Smart!</h3>
-                        <p class="text">놀이가 작품이 되고 상상이 현실이 되는 곳</p>
+            <!-- 공지/푸터 -->
+            <footer id="footer">
+                <!-- 공지사항 -->
+                <div class="notice">
+                    <div class="notice_box">
+                        <p class="notice_text">
+                            <strong>NOTICE</strong>
+                            <a href="#">NHN 정보처리 방침</a>
+                        </p>
                     </div>
                 </div>
 
-                <!-- 슬라이드2 -->
-                <div class="slide2 slideImg">
-                    <div class="text_box">
-                        <h3 class="title">Let the World Play with Us!</h3>
-                        <p class="text">더 넓은 세상, 더 많은 사람들이 더 큰 재미를 우리와 함께 나눕니다</p>
+                <!-- 푸터 -->
+                <div class="foot_ann">
+                    <div class="foot_ann_box">
+                        <ul class="legal_list">
+                            <li class="legal_item">
+                                <a href="#">
+                                    <p class="legal_text">제휴제안</p>
+                                </a>
+                            </li>
+
+                            <li class="legal_item">
+                                <a href="#">
+                                    <p class="legal_text">기업윤리</p>
+                                </a>
+                            </li>
+
+                            <li class="legal_item">
+                                <a href="#">
+                                    <p class="legal_text"><strong>개인정보 처리방침</strong></p>
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="copy">© NHN Corp. 퍼블리싱 연습용으로 김민지에 의해 제작된 페이지입니다.</p>
                     </div>
                 </div>
-
-                <!-- 슬라이드3 -->
-                <div class="slide3 slideImg">
-                    <div class="text_box">
-                        <h3 class="title">Toward Art, Science & Tech</h3>
-                        <p class="text">새로운 세상을 만들기 위해 도전합니다</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 섹션 분류 -->
-            <div class="sectioin service">
-                <ul>
-                    <li class="item hangame"><a href="#"></a></li>
-                    <li class="item payco"><a href="#"></a></li>
-                    <li class="item comico"><a href="#"></a></li>
-                    <li class="item nhnCloud"><a href="#"></a></li>
-                    <li class="item bugs"><a href="#"></a></li>
-                    <li class="item ticketlink"><a href="#"></a></li>
-                </ul>
-            </div>
-
-            <!-- 타임그래프 -->
-            <div class="sectioin time_graph">
-                <div class="control_box"></div>
-                <div class="graph"></div>
-                <p class="page_text"></p>
-            </div>
-
-            <div class="section company_info">
-                <div class="info_con1"></div>
-                <div class="info_con2"></div>
-            </div>
-        </div>
-
-        <div id="wrap2">
-            <footer></footer>
+            </footer>
         </div>
     </body>
 </html>

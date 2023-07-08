@@ -1,7 +1,8 @@
 /* 초기화 */
 @charset "utf=8";
 /* 폰트 */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://webfontworld.github.io/naver/NanumBarunGothic.css');
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
@@ -10,180 +11,251 @@
     list-style: none;
     text-decoration: none;
     word-break: keep-all;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'NanumBarunGothic', sans-serif;
 }
 
 /* 전체 */
-#wrap {
+#wrapper {
     width: 100%;
     height: 100%;
+    background-color: aqua;
+}
+
+/* ----------------------------------- */
+
+/* 헤더 */
+#header {
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+}
+
+.head_box {
+    width: 100vw;
+    height: 5rem;
+}
+
+.head_con {
+    max-width: 90rem;
+    height: 5rem;
+    margin: 0% auto;
+}
+
+/* ----------------------------------- */
+
+/* 헤더-로고 */
+h1 > a > img {
+    width: 7.5rem;
+    float: left;
+    margin-top: 2rem;
+}
+
+/* ----------------------------------- */
+
+/* 헤더-네비게이션 */
+.global_nav {
+    float: right;
+    margin-top: 2.2rem;
+}
+
+.global_nav > li {
+    float: left;
+}
+
+.nav_link {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif !important;
+    color: white;
+    margin-left: 3.125rem;
+}
+
+.nav_link:hover {
+    color: #fa2828;
+}
+
+.bar,
+.bar:hover {
+    color: #fff;
+    font-weight: 100;
+    cursor: default;
+}
+
+.en {
+    margin-left: 1.5rem !important;
+}
+
+/* ----------------------------------- */
+
+/* 메인컨텐츠 */
+#contain {
+    width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;
+    position: relative;
+}
+
+.main_con {
+    width: 100vw;
+    height: 100vh;
+    background-color: blanchedalmond;
+    position: relative;
+}
+.slide_list > li {
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: 50% 50%;
+}
+
+.slide1 {
+    background-image: url('/source/main_01.jpg');
+    background-size: cover;
+}
+
+/* 텍스트 */
+.text_box {
+    max-width: 90rem;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+.text_box_inner {
+    position: absolute;
+    top: 50%;
+    margin-top: -7rem;
+}
+
+h3 {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.02;
+    margin-bottom: 1.875rem;
+}
+
+h4 {
+    font-size: 22px;
+    color: white;
+    line-height: 1.36;
+}
+
+/* ----------------------------------- */
+
+/* 서브컨텐츠 */
+.time {
+    max-width: 90rem;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 200px;
+    right: 12%;
+    z-index: 10;
+}
+
+.company {
+    max-width: 90rem;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 200px;
+    left: 12%;
+    z-index: 10;
+}
+
+/* ----------------------------------- */
+
+/* 주식/PRESS */
+.cloum_box {
+    width: 100vw;
+    height: 10rem;
+    clear: both;
+    position: absolute;
+    bottom: 0;
+}
+
+.stock {
+    width: 50vw;
+    height: 10rem;
+    background-color: rgba(250, 40, 40, 0.8);
+    float: left;
+}
+
+.press {
+    width: 50vw;
+    height: 10rem;
+    background-color: rgba(35, 35, 35, 0.9);
+    float: right;
+}
+
+/* ----------------------------------- */
+
+/* 푸터-공지사항 */
+.notice {
+    width: 100vw;
+    padding: 1rem 0rem;
+    background-color: #fff;
+}
+
+.notice_box {
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+.notice_text > strong {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+.notice_text > a {
+    padding-left: 2rem;
+    font-size: 14px;
+    color: #494949;
+}
+
+/* ----------------------------------- */
+
+/* 푸터-서술 */
+.foot_ann {
+    width: 100vw;
+    padding: 2.5rem 0rem;
+    background-color: #fff;
+    border-top: solid 1px #d8d8d8;
+}
+
+.foot_ann_box {
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+.legal_list {
     clear: both;
 }
 
-/* 헤더 */
-
-/* 네비게이션-1440px */
-@media screen and (min-width: 1440px) {
-    .main {
-        width: 100%;
-        height: 100%;
-        position: relative;
-    }
-
-    .header {
-        max-width: 90rem;
-        max-height: 6.25rem;
-        padding: 0px 180px;
-        margin: 0 auto;
-        z-index: 100;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-    }
-
-    /* 로고 */
-    .logo > img {
-        width: 7.5rem;
-        height: auto;
-        margin-top: 36px;
-        text-align: left;
-        float: left;
-    }
-
-    .global_nav {
-        float: right;
-    }
-
-    nav,
-    ul {
-        float: left;
-    }
-
-    .nav > li,
-    .language > li {
-        float: left;
-        margin-top: 2.625rem;
-        padding-left: 3.5rem;
-    }
-
-    .nav_link {
-        font-size: 14px;
-        font-weight: 700;
-        font-family: 'Montserrat', sans-serif;
-        color: white;
-    }
-
-    .nav_link:hover {
-        color: #fa2828;
-    }
-
-    .en {
-        padding-left: 2rem !important;
-    }
-
-    .kr {
-        color: #fa2828 !important;
-    }
-
-    .bar {
-        font-weight: 300;
-    }
-
-    /* 본문- */
-    .container {
-        width: 100%;
-        height: 100vh;
-        background-color: aqua;
-    }
-
-    /* 슬라이드1 */
-    .slide1 {
-        width: 100vw;
-        height: 100vh;
-        background-image: url('../source/main_01.jpg');
-        background-size: cover;
-        position: absolute;
-        z-index: -100;
-    }
-
-    /* 슬라이드2 */
-    .slide2 {
-        width: 100vw;
-        height: 100vh;
-        background-image: url('../source/main_02.jpg');
-        background-size: cover;
-        position: absolute;
-        z-index: -100;
-    }
-
-    /* 슬라이드3 */
-    .slide3 {
-        width: 100vw;
-        height: 100vh;
-        background-image: url('../source/main_03.jpg');
-        background-size: cover;
-        position: absolute;
-        z-index: -100;
-    }
-
-    /* 텍스트 박스 */
-    .text_box {
-        position: absolute;
-        top: 53.5%;
-        left: 220px;
-        margin-top: -7rem;
-    }
-
-    h3 {
-        font-family: Montserrat;
-        font-size: 60px;
-        font-weight: 700;
-        color: white;
-        line-height: 1.02;
-        margin-bottom: 1.875rem;
-    }
-
-    .text {
-        font-size: 22px;
-        color: white;
-        line-height: 1.36;
-    }
-
-    /* 섹션 */
-    .sectioin {
-        z-index: 100;
-    }
-
-    .company_info {
-        width: 100vw;
-        min-height: 160px;
-        position: absolute;
-        bottom: 0px;
-    }
-
-    .info_con1 {
-        width: 50vw;
-        min-height: 160px;
-        background-color: #fa2828;
-        float: left;
-    }
-
-    .info_con2 {
-        width: 50vw;
-        min-height: 160px;
-        background-color: #222222;
-        float: right;
-    }
-
-    footer {
-        width: 100vw;
-        height: 80px;
-        background-color: azure;
-        bottom: 0;
-        position: fixed;
-    }
+.legal_text {
+    float: left;
+    color: #999;
+    margin-right: 2rem;
+    font-size: 14px;
+    margin-bottom: 2rem;
 }
 
-@media screen and (min-width: 540px) {
+.legal_text > strong {
+    color: #494949;
+}
+
+.legal_text:hover {
+    text-decoration: underline;
+}
+
+.copy {
+    clear: both;
+    font-family: 'Montserrat', sans-serif;
+    color: #999;
+    font-size: 14px;
 }
