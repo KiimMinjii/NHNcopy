@@ -116,6 +116,16 @@ h1 > a > img {
     background-size: cover;
 }
 
+.slide2 {
+    background-image: url('../source/main_02.jpg');
+    background-size: cover;
+}
+
+.slide3 {
+    background-image: url('../source/main_03.jpg');
+    background-size: cover;
+}
+
 /* 텍스트 */
 .text_box {
     max-width: 90rem;
@@ -168,10 +178,10 @@ h4 {
 
 /* ----------------------------------- */
 
-/* 주식/PRESS */
+/* 주식*/
 .cloum_box {
     width: 100vw;
-    height: 10rem;
+    height: 9rem;
     clear: both;
     position: absolute;
     bottom: 0;
@@ -179,16 +189,63 @@ h4 {
 
 .stock {
     width: 50vw;
-    height: 10rem;
+    height: 9rem;
     background-color: rgba(250, 40, 40, 0.8);
     float: left;
 }
 
+.stock_box {
+    max-width: 45rem;
+    height: 100%;
+    float: right;
+}
+
+.stock_inner {
+    width: 45rem;
+    height: 100%;
+}
+
+/* PRESS */
 .press {
     width: 50vw;
-    height: 10rem;
+    height: 9rem;
     background-color: rgba(35, 35, 35, 0.9);
     float: right;
+}
+
+.press_box {
+    max-width: 45rem;
+    height: 100%;
+    margin-left: 2rem;
+}
+
+/* 폰트 */
+.sub_title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 2.8rem 0rem 0.5rem 0rem;
+    color: #fff;
+}
+
+.main_text {
+    font-size: 24px !important;
+    font-weight: 500 !important;
+    margin-top: -8px !important;
+}
+
+.stock_text {
+    float: left;
+    margin-right: 1rem;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.press_text {
+    color: #fff;
+    font-size: 14px;
 }
 
 /* ----------------------------------- */
