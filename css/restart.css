@@ -23,9 +23,41 @@
 /* 헤더 */
 #header {
     width: 100vw;
-    height: 12.5rem;
+    height: 100%;
     background-color: aliceblue;
 }
+
+.head_box {
+    width: 100vw;
+    height: 5rem;
+    margin: 0 auto;
+}
+
+.head_con {
+    max-width: 90rem;
+    height: 5rem;
+    background-color: rgb(59, 78, 78);
+    margin: 0% auto;
+}
+
+/* 로고 */
+h1 > a > img {
+    width: 7.5rem;
+    float: left;
+    margin-top: 1.5rem;
+}
+
+/* 네비게이션 */
+.global_nav {
+    float: right;
+    margin-top: 1.5rem;
+}
+
+.global_nav > li {
+    float: left;
+}
+
+/* ----------------------------------- */
 
 /* 메인컨텐츠 */
 #contain {
